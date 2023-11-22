@@ -16,7 +16,7 @@ async function getWeather(city) {
     document.querySelector(".windS").innerHTML = Math.round(data.wind.speed) + " km/h";
 
     if (data.weather == [0].main =='Clouds') {
-        image.src= "./image/sun.png"
+        image.src = "./image/sun.png"
     } else if (data.weather[0].main == "Haze") {
         image.src = "./image/sun.png"
     } else if (data.weather[0].main == "Drizzle") {
